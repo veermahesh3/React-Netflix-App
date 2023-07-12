@@ -13,7 +13,9 @@ ReactDOM.render(
 </h1>
 {sdata.map((value)=>{
   return(
-  <Card img={value.img}
+  <Card 
+  key={value.id}
+  img={value.img}
   title={value.title}
   sname={value.sname}
   link={value.link}
